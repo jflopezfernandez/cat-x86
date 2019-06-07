@@ -6,7 +6,7 @@
 ;  Created date    : 6/6/2019
 ;  Last update     : 6/6/2019
 ;  Author          : Jose Fernando Lopez Fernandez
-;  Description     : Read input from stdin and convert lower to uppercase
+;  Description     : Rewrite of the Unix cat utility in x86 assembly.
 ;
 ;  Build using these commands:
 ;    nasm -f elf -g -F stabs main.asm
@@ -38,10 +38,7 @@
 ;==============================================================================
 
                 SECTION .data
-	
-MSG:            DB 	"KANGAROO",10
-LEN:            EQU $-MSG
-	
+		
 ;==============================================================================
 ;
 ;                             BSS SEGMENT
